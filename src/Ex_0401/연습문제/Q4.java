@@ -16,7 +16,7 @@ public class Q4 {
             try{
 
                 int n=sc.nextInt();
-                if(n==-1){
+                if(n<0){ //음수 입력시 프로그램 종료
                     System.out.println("프로그램을 종료합니다...");
                     break;
                 }
@@ -27,7 +27,7 @@ public class Q4 {
 
             }catch (InputMismatchException e){
                 System.out.println("경고! 수를 입력하지 않았습니다.");
-                sc.next(); // 버퍼에 있는 값 버리기
+                sc.next(); // 버퍼에 있는 값 버리기!!
             }
 
         }

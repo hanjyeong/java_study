@@ -16,9 +16,9 @@ public class SubObject extends SuperObject{
     public void draw(){
 
         name = "Sub";
-        super.name = "Super";
+        super.name = "Super"; // 정적 바인딩
         super.draw(); // 정적 바인딩
-        System.out.println(name); // 동적 바인딩
+        System.out.println(name);
     }
 
     public static void main(String[] args) {

@@ -57,7 +57,7 @@ public class FoodTest {
         System.out.print("음식명>>"); name=sc.next();
         System.out.print("주문개수>>"); int count= sc.nextInt();
         for(int i=0;i< arr.length;i++){
-            if(arr[i].getName().equals(name)){ //
+            if(arr[i].getName().equals(name)){
                 System.out.println("총 칼로리: "+arr[i].cal(count));
             }
         }

@@ -12,11 +12,12 @@ public class ContinueExample {
 
         for(int i=0;i<5;i++){
             int n=sc.nextInt();
-            if(n<=0) continue;  // 양수만 합하기 위해
+            if(n<=0) continue;  // 음수인 경우 다음 반복문으로 진행
             sum+=n;
         }
 
         System.out.println("양수의 합은 = "+sum);
+
         sc.close();
 
 

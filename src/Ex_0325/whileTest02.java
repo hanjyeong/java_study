@@ -6,14 +6,14 @@ public class whileTest02 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int com = (int)(Math.random() * 10) +1; //random()= 0.0~9.9
+       int com=(int)(Math.random()*10)+1; // 1~10까지의 정수
         int count=0;  // 횟수
 
         while(true){
 
             System.out.print("컴퓨터가 생각한 수를 맞춰보세요(1~10사이)>>");
             int n = sc.nextInt();
-            count++;
+            ++count;
 
             if(com==n){
                 System.out.println(count+"번 만에 맞췄습니다!!");
@@ -28,6 +28,6 @@ public class whileTest02 {
 
 
         }
-        sc.close();
+       // sc.close();
     }
 }

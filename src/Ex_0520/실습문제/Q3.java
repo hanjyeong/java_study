@@ -8,26 +8,23 @@ import java.awt.*;
 public class Q3 extends JFrame {
 
     Q3(){
-        setTitle("[한지형] ContemtPane과 JFrame 예제");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 윈도우 창 종료시 프로세스 종료
-        setSize(200,100);
+        setTitle("FlowLayout 예제");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(300,300);
 
-
+        // 컨텐트 팬 알아내기
         Container cp = getContentPane();
-        cp.setLayout(new FlowLayout()); // 배치관리자
+        // 배치 관리자 설정하기
+        cp.setLayout(new FlowLayout());
 
-        // 라벨 생성
-        JLabel la = new JLabel("100+200");
-        JLabel la2 = new JLabel("300");
-
-        //컨턴트 팬에 부착하기
-        cp.add(la);
+        // 컨텐트 팬에 요소들 생성하고 붙이기
+        cp.add(new JLabel("100+200"));
         cp.add(new JButton("="));
-        cp.add(la2);
+        cp.add(new JLabel("300"));
 
 
 
-        this.setVisible(true); // 화면에 프레임 출력
+        setVisible(true);
     }
 
     public static void main(String[] args) {

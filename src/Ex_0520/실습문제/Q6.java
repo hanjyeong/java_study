@@ -11,9 +11,10 @@ public class Q6 extends JFrame {
         setTitle("[한지형] 배치관리자 없는 Layout");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 윈도우 창 종료시 프로세스 종료
         setSize(300,300);
-        Container cp = getContentPane(); // 프레임의 컨테이너 팬 영역 얻어오기
-        cp.setLayout(null); // 배치관리자 없음
 
+        Container cp = getContentPane(); // 프레임의 컨테이너 팬 영역 얻어오기
+        // 배치 관리자 설정 - 배치 관리자 없음
+        cp.setLayout(null);
 
         for(int i=0;i<20;i++){
             JLabel la = new JLabel(Integer.toString(i));
@@ -22,8 +23,10 @@ public class Q6 extends JFrame {
             int y = (int) (Math.random() * (this.getHeight() - 50));
             la.setLocation(x,y);
 
+            // 크기 설정
             la.setSize(20,20);
             la.setForeground(Color.MAGENTA);
+
             cp.add(la); // la를 컨텐트 팬에 부착
         }
 

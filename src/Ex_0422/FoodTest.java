@@ -6,12 +6,13 @@ interface InterFood{
 }
 
 abstract class Food implements InterFood {
-   private String foodName;
+   private String foodName; //private 필드
 
     public Food(String foodName){
         this.foodName =foodName;
     }
 
+    //getter,setter
     public String getFoodName() {
         return foodName;
     }
@@ -22,10 +23,11 @@ abstract class Food implements InterFood {
 
 }
 
+
 class Noodle extends Food{
 
-    public Noodle (String name){
-        super(name);
+    public Noodle (String foodName){
+        super(foodName);
     }
     @Override
     public void cook() {
@@ -40,8 +42,8 @@ class Noodle extends Food{
 
 class FriedRice extends Food {
 
-    public FriedRice(String name){
-        super(name);
+    public FriedRice(String foodName){
+        super(foodName);
     }
     @Override
     public void cook() {
@@ -64,12 +66,12 @@ public class FoodTest  {
 
         for(int i=0;i<2;i++){
             System.out.println("음식명: "+ f[i].getFoodName());
-            System.out.print("요리법: "); f[i].cook();
+            System.out.print("요리법: "); f[i].cook(); // void 메서드는 +로 연결X
             if(f[i] instanceof Noodle){
                 System.out.println("파를 넣는다");
             }
             System.out.print("음식맛: "); f[i].taste();
-            System.out.print("*************************\n");
+            System.out.println("**********************************");
         }
 
     }

@@ -2,7 +2,7 @@ package Ex_0318.연습문제;
 
 import java.util.Scanner;
 
-public class ch2_Ex08_IF {
+public class Q8_if {
 
     public static void main(String[] args) {
         //22017100 한지형
@@ -11,7 +11,7 @@ public class ch2_Ex08_IF {
         String coffee = sc.next();
         int num= sc.nextInt();
 
-
+        // 문자열 비교 equals
           if(coffee.equals("에스프레소")){
               System.out.println(2000*num+"원 입니다.");
           }

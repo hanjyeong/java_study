@@ -12,6 +12,8 @@ public class Q5 extends JFrame {
         setTitle("[한지형] GridLayout 예제 ");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 윈도우 창 종료시 프로세스 종료
         setSize(500, 200);
+
+
         Container cp = getContentPane(); // 프레임의 컨테이너 팬 영역 얻어오기
 
         Color[] color = {Color.RED, Color.ORANGE, Color.YELLOW, Color.GREEN,

@@ -11,25 +11,6 @@ public class Season2{
         String season = sc.next();
         char c = season.charAt(0); // 문자열에서 문자 추출
 
-
-        switch (season){
-
-            case "봄":
-                System.out.println("3~5월 입니다");
-                break;
-            case "여름":
-                System.out.println("3~5월 입니다");
-                break;
-            case "가을":
-                System.out.println("3~5월 입니다");
-                break;
-            case "겨울":
-                System.out.println("3~5월 입니다");
-                break;
-
-            default:
-                System.out.println("잘못된 입력입니다");
-        }
         switch (c){
 
             case '봄':

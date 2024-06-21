@@ -11,7 +11,7 @@ public class Twenties {
         Scanner sc = new Scanner(System.in);
         int age = sc.nextInt();
 
-        if(age>=20 && age<30){
+        if(age>=20 && age<30){ // 20대인지 검사
             System.out.print("20대 입니다. ");
             System.out.println("20대라서 행복합니다!");
         }

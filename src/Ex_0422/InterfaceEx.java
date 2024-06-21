@@ -6,7 +6,7 @@ interface PhoneInterface{ //인터페이스 선언
     void receiveCall(); // 추상 메서드
     default void printLogo(){ //default 메서드
         System.out.println("**Phone**");
-    }
+    } // 디폴트 메서드
 
 }
 class SamsungPhone implements PhoneInterface{

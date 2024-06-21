@@ -1,6 +1,6 @@
 package Ex_0422;
 
-abstract class Calc{ // 추상 메서드들만 갖고 있는 경우는 인터페이스 사용
+abstract class Calc{
     public abstract int add(int a, int b);
     public abstract int subtract(int a, int b);
     public abstract double average(int []a);

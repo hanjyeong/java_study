@@ -2,7 +2,7 @@ package Ex_0318.연습문제;
 
 import java.util.Scanner;
 
-public class ch2_Ex04 {
+public class Q4 {
 
     public static void main(String[] args) {
 

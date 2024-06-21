@@ -9,20 +9,24 @@ import java.awt.*;
 public class Q2  extends JFrame {
 
     Q2(){
+        setTitle("Borderlayout 예제");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(500,500);
 
-        setTitle("[한지형] BorderLayOut 예제");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 윈도우 창 종료시 프로세스 종료
-        setSize(300,200);
-
+        //컨텐트팬 알아내기
         Container cp = getContentPane();
-        cp.setLayout(new BorderLayout(5,5)); // 배치관리자
+        // 배치 관리자 생성하기
+        cp.setLayout(new BorderLayout(5,5));
 
-        cp.add(new JButton("NORTH"),BorderLayout.NORTH);
-        cp.add(new JButton("SOUTH"),BorderLayout.SOUTH);
-        cp.add(new JButton("CENTER"),BorderLayout.CENTER);
-        cp.add(new JButton("WEST"),BorderLayout.WEST);
+        // 영역에 따라서 버튼 생성하기
+        cp.add(new Button("north"), BorderLayout.NORTH);
+        cp.add(new Button("west"), BorderLayout.WEST);
+        cp.add(new Button("center"), BorderLayout.CENTER);
+        cp.add(new Button("south"), BorderLayout.SOUTH);
 
-        this.setVisible(true); // 화면에 프레임 출력
+
+        setVisible(true);
+
     }
     public static void main(String[] args) {
         new Q2();

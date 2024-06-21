@@ -12,7 +12,7 @@ public class WhileSample {
 
         System.out.print("정수를 입력하고 마지막에 0을 입력하세요>>");
 
-        while((n = sc.nextInt())!=0){
+        while((n=sc.nextInt())!=0){
             sum+=n;
             count++;
         }

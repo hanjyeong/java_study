@@ -26,11 +26,8 @@ public class MethodOverridingEx {
 
     public static void paint(Shape p){ // 업캐스팅
         p.draw(); //동적 바인딩
-    }
+    } // static 메서드
     public static void main(String[] args) { // 한지형
-
-        Line line = new Line();
-        paint(line);
 
         paint(new Shape()); //Shape의 draw
         paint(new Line());

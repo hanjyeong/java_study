@@ -53,7 +53,8 @@ class Vol extends Rect{
     }
 
     public Vol(){
-        super(); depth=1;
+        //super(); 어차피 슈퍼클래스 기본 생성자 호출
+        depth=1;
     }
     public Vol(int width,int height,int depth){
         super(width, height);

@@ -23,14 +23,14 @@ class Pizza extends Circle22{
     private String topping;
 
     public Pizza(String topping, int radius){
-        super(radius); // 부모의 매개변수있는 생성자 이용
+        super(radius); // super
         this.topping=topping;
     }
 
     public void print(){
         System.out.println("토핑:" +topping);
-        System.out.println("피자 반지름:" +getRadius());
-        System.out.println("피자 크기:" +getArea());
+        System.out.println("피자 반지름:" +this.getRadius());
+        System.out.println("피자 크기:" +this.getArea());
     }
 
 }
